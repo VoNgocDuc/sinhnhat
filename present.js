@@ -6,6 +6,7 @@ var nametag = document.getElementById("nametag");
 var present = document.getElementById("present");
 var presentImage = document.getElementById("present-image");
 var index = 1;
+var index2 = 1;
 setInterval(() => {
   var img = document.getElementById("sidle-image");
   if (index > 4) {
@@ -14,6 +15,15 @@ setInterval(() => {
   img.setAttribute('src', `img/${index}.jpg`); 
   index++;
 }, 2500);
+
+setInterval(() => {
+  var img2 = document.getElementById("above-fold");
+  if (index2 > 4) {
+    index2 = 1;
+  }
+  img2.setAttribute('src', `img/${index2}.jpg`); 
+  index2++;
+}, 3000);
 
 function init() {
   var graphElem = document.querySelector('.present-box > .side.top .to');

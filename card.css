@@ -62,6 +62,6 @@
 
     @keyframes heart {
         96% {
-            transform:  scale(.9, .9)
+            transform:  scale(.93, .93)
         }
     }
