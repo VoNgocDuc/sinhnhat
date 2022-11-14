@@ -38,7 +38,11 @@ function init() {
       presentImage.appendChild(_giftImg);
     }
   }
-
+  present.addEventListener('touchstart', ()=>{
+    present.classList.toggle("open");
+    document.getElementById('card').classList.add('card-show');
+    document.getElementById('sidle-image').classList.add('card-show');
+  });
   present.addEventListener("click", function (e) {
     present.classList.toggle("open");
     document.getElementById('card').classList.add('card-show');
